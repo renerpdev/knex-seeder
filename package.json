@@ -1,0 +1,34 @@
+{
+  "name": "knex-seeder",
+  "version": "0.0.1",
+  "description": "Knex tool for seeding massive amount of fake data into a database",
+  "main": "index.js",
+  "scripts": {
+    "main": "node .",
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/2rhop/knex-seeder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/2rhop/knex-seeder/issues"
+  },
+  "keywords": [
+    "cli",
+    "knex",
+    "faker"
+  ],
+  "homepage": "https://github.com/2rhop/knex-seeder",
+  "author": "2rhop <renerp2016@gmail.com> (https://github.com/2rhop)",
+  "license": "MIT",
+  "dependencies": {
+    "faker": "^4.1.0",
+    "knex": "^0.14.6"
+  },
+  "devDependencies": {
+    "dotenv": "^5.0.1",
+    "jasmine": "^3.1.0",
+    "mysql": "^2.15.0"
+  }
+}
