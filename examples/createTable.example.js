@@ -1,6 +1,6 @@
 const ks = require('../index')
 
-ks.schema.createTable('user', (table) => {
+ks.Schema.createTable('user', (table) => {
     //here you can especify the fields of the table USER
     table.increments();
     table.string('name');
@@ -9,7 +9,7 @@ ks.schema.createTable('user', (table) => {
     table.timestamps(true, true);
 
 }).then(() => { //do chainning...
-    ks.schema.createTableAndClose('role', (table) => {
+    ks.Schema.createTableAndClose('role', (table) => {
         //here you can especify the fields of the table ROLE
         table.increments();
         table.string('name');

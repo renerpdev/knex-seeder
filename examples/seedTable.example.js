@@ -8,6 +8,6 @@ const {
 } = require('./createModel.example')
 
 var mySpec = new SpecBuilder('user', userModel.build)
-ks.seeder.seedAndClose(mySpec.build, 10).then(() => {
+ks.Seeder.seedAndClose(mySpec.build, 10).then(() => {
     //do something after...
 })
