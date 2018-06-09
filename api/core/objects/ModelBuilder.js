@@ -7,22 +7,22 @@ class ModelBuilder {
     }
 
     addField(name, faker) {
-        this._add(name, faker);
+        _add(name, faker, this.properties);
         return this
-    }
-
-    _add(name, faker) {
-        Object.defineProperty(this.properties, name, {
-            value: faker,
-            writable: true,
-            configurable: true,
-            enumerable: true
-        });
     }
 
     get build() {
         return this.properties
     }
+}
+
+function _add(name, faker, properties) {
+    Object.defineProperty(properties, name, {
+        value: faker,
+        writable: true,
+        configurable: true,
+        enumerable: true
+    });
 }
 
 module.exports = ModelBuilder
