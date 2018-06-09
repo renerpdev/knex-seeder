@@ -9,25 +9,19 @@ function getGeneratedModel(model) {
 
 //---
 function _getGenerator(type) {
-    if (typeof type === 'number' || typeof type === 'string') {
-        return type
-    }
-    else if (typeof type === 'function') {
+    if (typeof type === 'function') {
         return type()
-    }
-    else if (typeof type === 'object') {
+    } else if (typeof type === 'object') {
         if (type instanceof SeedFaker) {
             return _fake(type.getFaker, type.getLang)
-        }
-        else if (type instanceof SeedRange) {
+        } else if (type instanceof SeedRange) {
             return util.getRandomBetween(type.getMin, type.getMax)
-        }
-        else if (type instanceof Array) {
+        } else if (type instanceof Array) {
             return type[util.getRandom(type.length)]
         }
     }
 
-    return null
+    return type
 }
 
 function _fake(str, lang) {
@@ -35,8 +29,7 @@ function _fake(str, lang) {
     faker.locale = lang;
     try {
         fake = faker.fake('{{' + str + '}}')
-    }
-    catch (e) {
+    } catch (e) {
         fake = `FAILED`.bgRed + `\n->> ${e}`.red
     }
 
