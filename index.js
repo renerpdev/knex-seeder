@@ -7,6 +7,7 @@ const SeedFaker = require('./api/core/objects/Faker')
 const SeedRange = require('./api/core/objects/Range')
 const SpecBuilder = require('./api/core/objects/SpecBuilder')
 const ModelBuilder = require('./api/core/objects/ModelBuilder')
+const knex = require('./api/knex.conf')
 
 function createAndSeed(spec, fn, queries) {
     console.log(`${colors.FgBlue}   ([^ _ ^])${suffix}`)
@@ -34,5 +35,6 @@ module.exports = {
     SeedRange,
     createAndSeed,
     createAndSeed_close,
-    close: util.closeConnection
+    close: util.closeConnection,
+    knex
 }
