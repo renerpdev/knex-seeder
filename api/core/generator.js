@@ -17,7 +17,13 @@ function _getGenerator(type) {
         } else if (type instanceof SeedRange) {
             return util.getRandomBetween(type.getMin, type.getMax)
         } else if (type instanceof Array) {
-            return type[util.getRandom(type.length)]
+            var index = util.getRandom(type.length);
+            var value = type[index]
+            if (typeof value === 'boolean') {
+                var b=new BooleanFaker(value)
+                return b
+            } else
+                return value
         }
     }
 
@@ -36,6 +42,16 @@ function _fake(str, lang) {
     return fake
 }
 
+class BooleanFaker {
+    constructor(value) {
+        this.value = value;
+    }
+    get getValue() {
+        return this.value;
+    }
+}
+
 module.exports = {
-    getGeneratedModel
+    getGeneratedModel,
+    BooleanFaker
 }

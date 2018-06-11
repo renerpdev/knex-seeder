@@ -41,7 +41,7 @@ function _seedProcess(spec, queries) {
         types = model.types
         for (var j = 0; j < fields.length; j++) {
             Object.defineProperty(myObject, fields[j], {
-                value: types[j],
+                value: types[j] instanceof generator.BooleanFaker ? types[j].getValue : types[j],
                 writable: true,
                 configurable: true,
                 enumerable: true
