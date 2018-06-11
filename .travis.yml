@@ -1,4 +1,7 @@
+install:
+  - npm install
+
+os: windows
 language: node_js
 node_js:
   - "7.5.0"
-  - "9.7.0"
