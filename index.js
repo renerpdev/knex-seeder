@@ -41,6 +41,6 @@ module.exports = {
     createAndSeed_close,
     close: util.closeConnection,
     knex,
-    lang: constants.langs,
-    faker: constants.types,
+    LANG: constants.lang,
+    FAKER: constants.faker,
 }
