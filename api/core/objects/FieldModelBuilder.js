@@ -1,4 +1,4 @@
-class ModelBuilder {
+class FieldModelBuilder {
     constructor(fields) {
         if (fields)
             this.properties = fields
@@ -25,4 +25,4 @@ function _add(name, faker, properties) {
     });
 }
 
-module.exports = ModelBuilder
+module.exports = FieldModelBuilder

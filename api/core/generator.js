@@ -3,8 +3,8 @@ const SeedFaker = require('./objects/Faker')
 const SeedRange = require('./objects/Range')
 const util = require('./../util/functions')
 
-function getGeneratedModel(model) {
-    return util.getTablePropertiesFrom(model, _getGenerator)
+function getGeneratedModel(fieldModel) {
+    return util.getTablePropertiesFrom(fieldModel, _getGenerator)
 }
 
 //---

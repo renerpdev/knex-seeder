@@ -9,22 +9,22 @@ const {
 const Generator = require('./api/core/generator')
 const SeedFaker = require('./api/core/objects/Faker')
 const SeedRange = require('./api/core/objects/Range')
-const SpecBuilder = require('./api/core/objects/SpecBuilder')
-const ModelBuilder = require('./api/core/objects/ModelBuilder')
+const TableModelBuilder = require('./api/core/objects/TableModelBuilder')
+const FieldModelBuilder = require('./api/core/objects/FieldModelBuilder')
 const knex = require('./api/knex.conf')
 
-function createAndSeed(spec, queries, fn) {
+function createAndSeed(tableModel, queries, fn) {
     console.log(`${colors.FgBlue}   ([^ _ ^])${suffix}`)
-    return Schema.createTable(spec, fn).then(() => {
-        return Seeder.seed(spec, queries)
+    return Schema.createTable(tableModel, fn).then(() => {
+        return Seeder.seed(tableModel, queries)
     }).catch((err) => {
         console.log(`\n ${colors.FgRed}->> ${err}${suffix}`)
         util.closeConnection()
     })
 }
 
-function createAndSeed_close(spec, queries, fn) {
-    return createAndSeed(spec, queries, fn).then(() => {
+function createAndSeed_close(tableModel, queries, fn) {
+    return createAndSeed(tableModel, queries, fn).then(() => {
         util.closeConnection()
     })
 }
@@ -33,8 +33,8 @@ module.exports = {
     Schema,
     Seeder,
     Generator,
-    SpecBuilder,
-    ModelBuilder,
+    TableModelBuilder,
+    FieldModelBuilder,
     SeedFaker,
     SeedRange,
     createAndSeed,

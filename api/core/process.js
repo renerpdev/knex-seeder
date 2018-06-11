@@ -6,12 +6,12 @@ const util = require('./../util/functions')
 const generator = require('./generator')
 const knex = require('./../knex.conf')
 
-function seed(spec, queries) {
-    return _seedProcess(spec, queries)
+function seed(tableModel, queries) {
+    return _seedProcess(tableModel, queries)
 }
 
-function seedAndClose(spec, queries) {
-    return seed(spec, queries).then(() => {
+function seedAndClose(tableModel, queries) {
+    return seed(tableModel, queries).then(() => {
         return util.closeConnection()
     })
 }
@@ -25,9 +25,9 @@ function seedAndClose(spec, queries) {
 // }
 
 //------
-function _seedProcess(spec, queries) {
+function _seedProcess(tableModel, queries) {
     var fb = [],
-        table = spec.table,
+        table = tableModel.table,
         myObject = {},
         model, fields = [],
         types = [];
@@ -36,7 +36,7 @@ function _seedProcess(spec, queries) {
     //     msgerr = `${colors.FgRed}The table ${table.toUpperCase()} couldn't be seeded${suffix} `
     console.log(`--> seeding table ${colors.Underscore}${table.toUpperCase()}${suffix}...`)
     for (var i = 0; i < queries; i++) {
-        model = generator.getGeneratedModel(spec.model);
+        model = generator.getGeneratedModel(tableModel.model);
         fields = model.fields
         types = model.types
         for (var j = 0; j < fields.length; j++) {

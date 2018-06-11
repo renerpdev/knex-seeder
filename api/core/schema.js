@@ -6,14 +6,14 @@ const {
     suffix
 } = require('./../util/colors')
 
-function createTable(spec, fn) {
-    var tableName = spec.table
+function createTable(tableModel, fn) {
+    var tableName = tableModel.table
     return existTable(tableName).then(async (exist) => {
         if (!exist) {
             console.log(`--> creating table ${colors.Underscore}${tableName.toUpperCase()}${suffix}...`)
             // var msg = `${colors.FgCyan}Creation of table ${tableName.toUpperCase()}:${suffix} `
             if (!fn)
-                fn = await _getCreateFn(spec)
+                fn = await _getCreateFn(tableModel)
 
             return knex.schema.createTable(tableName, fn).then(() => {
                 console.log(`${colors.BgGreen}SUCCESS${suffix}`)
@@ -39,8 +39,8 @@ function createTableAndClose(tableName, fn) {
 
 //--
 
-function _getCreateFn(spec) {
-    var model = generator.getGeneratedModel(spec.model)
+function _getCreateFn(tableModel) {
+    var model = generator.getGeneratedModel(tableModel.model)
     var fields = model.fields,
         types = model.types;
     var fn = (table) => {

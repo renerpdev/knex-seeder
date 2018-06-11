@@ -1,4 +1,4 @@
-class SpecBuilder {
+class TableModelBuilder {
     constructor(tableName, model) {
         this.tableName = tableName;
         if (!model)
@@ -25,4 +25,4 @@ class SpecBuilder {
     }
 }
 
-module.exports = SpecBuilder
+module.exports = TableModelBuilder
