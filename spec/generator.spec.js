@@ -1,13 +1,18 @@
-const ks = require('../index')
+const FieldModelBuilder = require('../api/core/objects/FieldModelBuilder'),
+    Generator = require('../api/core/generator'),
+    SeedFaker = require('../api/core/objects/Faker'),
+    SeedRange = require('../api/core/objects/Range'),
+    FAKER = require('../api/util/constants')
+
 
 describe('The function getGeneratedModel()', () => {
     var fieldModel;
 
     beforeEach(() => {
-        fieldModel = new ks.FieldModelBuilder({
-            name: new ks.SeedFaker(ks.FAKER.NAME),
-            email: new ks.SeedFaker('internet.email'),
-            eval: new ks.SeedRange(2, 5),
+        fieldModel = new FieldModelBuilder({
+            name: new SeedFaker(FAKER.faker.NAME),
+            email: new SeedFaker('internet.email'),
+            eval: new SeedRange(2, 5),
             array: [2, 3, 4, 9, 78, 12],
             role: () => {
                 return 'user'
@@ -25,7 +30,7 @@ describe('The function getGeneratedModel()', () => {
     });
 
     it('should return the apropriate types', () => {
-        var gm = ks.Generator.getGeneratedModel(fieldModel.build)
+        var gm = Generator.getGeneratedModel(fieldModel.build)
 
         expect(gm).toEqual(jasmine.objectContaining({
             fields: [
