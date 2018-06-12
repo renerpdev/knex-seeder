@@ -1,8 +1,20 @@
-# knex-seeder
+# **knex-seeder**
 
-[![Build Status](https://travis-ci.org/2rhop/knex-seeder.svg?branch=master)](https://travis-ci.org/2rhop/knex-seeder)
-[![Dependencies](https://david-dm.org/2rhop/knex-seeder.svg?branch=master)](https://david-dm.org)
-[![Coverage Status](https://coveralls.io/repos/github/2rhop/knex-seeder/badge.svg?branch=master)](https://coveralls.io/github/2rhop/knex-seeder?branch=master)
+![GitHub top language](https://img.shields.io/github/languages/top/2rhop/knex-seeder.svg)
+![license](https://img.shields.io/github/license/2rhop/knex-seeder.svg)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/2rhop/knex-seeder.svg)
+![Dependencies](https://david-dm.org/2rhop/knex-seeder.svg?branch=master)
+[![GitHub (pre-)release](https://img.shields.io/github/release/2rhop/knex-seeder/all.svg)](https://github.com/2rhop/knex-seeder/releases)
+====
+
+## on Github
+
+![GitHub contributors](https://img.shields.io/github/contributors/2rhop/knex-seeder.svg)
+![GitHub last commit](https://img.shields.io/github/last-commit/2rhop/knex-seeder.svg)
+![GitHub (Pre-)Release Date](https://img.shields.io/github/release-date-pre/2rhop/knex-seeder.svg)
+====
+
+
 
 ## <img align="center" alt="knex-seeder Logo" src="assets/logo.png" height=150 title="knex-seeder"/>
 
@@ -300,6 +312,7 @@ To integrate this tool with a database connection you need to install the approp
 
 # Support
 ## Contributing
+![Build Status](https://travis-ci.org/2rhop/knex-seeder.svg?branch=master)
 
 All the unit tests are written with [Jasmine](https://www.npmjs.com/package/jasmine). Feel free to add more functionalities and bug fixes but also add a test for each of them. Just type `npm test`, but before that you need to install `Jasmine` globally.
 
