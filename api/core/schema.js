@@ -8,7 +8,7 @@ const {
 
 function createTable(tableModel, fn) {
     var tableName = tableModel.table
-    return existTable(tableName).then(async(exist) => {
+    return existTable(tableName).then(async((exist) => {
         if (!exist) {
             console.log(`--> creating table ${colors.Underscore}${tableName.toUpperCase()}${suffix}...`)
             // var msg = `${colors.FgCyan}Creation of table ${tableName.toUpperCase()}:${suffix} `
@@ -22,7 +22,7 @@ function createTable(tableModel, fn) {
                 util.closeConnection()
             })
         }
-    })
+    }))
 }
 
 function existTable(tableName) {
