@@ -11,6 +11,8 @@
 
 ![GitHub contributors](https://img.shields.io/github/contributors/2rhop/knex-seeder.svg)
 ![GitHub last commit](https://img.shields.io/github/last-commit/2rhop/knex-seeder.svg)
+![GitHub issues](https://img.shields.io/github/issues/2rhop/knex-seeder.svg)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/2rhop/knex-seeder.svg)
 ![GitHub (Pre-)Release Date](https://img.shields.io/github/release-date-pre/2rhop/knex-seeder.svg)
 ====
 
