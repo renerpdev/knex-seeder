@@ -6,7 +6,7 @@ const ks = require('../index')
 const model = require('./createModel.example')
 ks.Schema.createTableAndClose({
     table: 'user',
-    model: model.userModel.build
+    model: model.userFieldModel.build
 }).then(() => {
     //do something after here...
 })

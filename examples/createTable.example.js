@@ -1,10 +1,10 @@
 const ks = require('../index')
 const {
-    userModel,
-    roleModel
+    userFieldModel,
+    roleFieldModel
 } = require('./createModel.example')
 
-ks.Schema.createTable(new ks.TableModelBuilder('user', userModel.build).build, (table) => {
+ks.Schema.createTable(new ks.TableModelBuilder('user', userFieldModel.build).build, (table) => {
     //here you can especify the fields of the table USER
     table.increments();
     table.string('name');
@@ -14,7 +14,7 @@ ks.Schema.createTable(new ks.TableModelBuilder('user', userModel.build).build, (
 
 }).then(() => { //do chainning...
     //also you can create the table automatically omitting the knex.js function
-    ks.Schema.createTableAndClose(new ks.TableModelBuilder('role', roleModel.build).build).then(() => {
+    ks.Schema.createTableAndClose(new ks.TableModelBuilder('role', roleFieldModel.build).build).then(() => {
         //do something after here...
     });
 });
