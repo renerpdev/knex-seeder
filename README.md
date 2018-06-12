@@ -5,18 +5,8 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/2rhop/knex-seeder.svg)
 ![Dependencies](https://david-dm.org/2rhop/knex-seeder.svg?branch=master)
 [![GitHub (pre-)release](https://img.shields.io/github/release/2rhop/knex-seeder/all.svg)](https://github.com/2rhop/knex-seeder/releases)
-====
-
-## on Github
-
-![GitHub contributors](https://img.shields.io/github/contributors/2rhop/knex-seeder.svg)
-![GitHub last commit](https://img.shields.io/github/last-commit/2rhop/knex-seeder.svg)
-![GitHub issues](https://img.shields.io/github/issues/2rhop/knex-seeder.svg)
-![GitHub closed issues](https://img.shields.io/github/issues-closed/2rhop/knex-seeder.svg)
 ![GitHub (Pre-)Release Date](https://img.shields.io/github/release-date-pre/2rhop/knex-seeder.svg)
 ====
-
-
 
 ## <img align="center" alt="knex-seeder Logo" src="assets/logo.png" height=150 title="knex-seeder"/>
 
