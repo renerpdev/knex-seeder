@@ -29,7 +29,7 @@
 !.vscode/extensions.json
 
 # misc
-knexfile.js
+#knexfile.js
 /assets/*.ai
 /npm_assets
 /.sass-cache
