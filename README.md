@@ -5,7 +5,7 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/2rhop/knex-seeder.svg)
 ![Dependencies](https://david-dm.org/2rhop/knex-seeder.svg?branch=master)
 [![GitHub (pre-)release](https://img.shields.io/github/release/2rhop/knex-seeder/all.svg)](https://github.com/2rhop/knex-seeder/releases)
-![Github Pre-Releases](https://img.shields.io/github/downloads-pre/2rhop/knex-seeder/latest/total.svg)
+![Github Pre-Releases](https://img.shields.io/github/downloads-pre/2rhop/knex-seeder/v0.1-beta.1/total.svg)
 ====
 
 ## <img align="center" alt="knex-seeder Logo" src="assets/logo.png" height=150 title="knex-seeder"/>
@@ -303,7 +303,9 @@ To integrate this tool with a database connection you need to install the approp
 * `npm install` sqlite3
 
 # Support
-## Contributing ![Build Status](https://travis-ci.org/2rhop/knex-seeder.svg?branch=master)
+
+## Contributing 
+![Build Status](https://travis-ci.org/2rhop/knex-seeder.svg?branch=master)
 
 All the unit tests are written with [Jasmine](https://www.npmjs.com/package/jasmine). Feel free to add more functionalities and bug fixes but also add a test for each of them. Just type `npm test`, but before that you need to install `Jasmine` globally.
 
@@ -312,7 +314,8 @@ npm install -g jasmine
 ```
 
 Also remember to update the [CHANGELOG.md](/CHANGELOG.md) file with your modifications on this tool.
-## Changelog ![GitHub (Pre-)Release Date](https://img.shields.io/github/release-date-pre/2rhop/knex-seeder.svg)
+## Changelog 
+![GitHub (Pre-)Release Date](https://img.shields.io/github/release-date-pre/2rhop/knex-seeder.svg)
 
 Get update with all new versions [here](https://github.com/2rhop/knex-seeder/releases)
 
