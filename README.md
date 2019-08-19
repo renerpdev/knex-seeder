@@ -2,13 +2,10 @@
 
 ![GitHub top language](https://img.shields.io/github/languages/top/2rhop/knex-seeder.svg)
 ![license](https://img.shields.io/github/license/2rhop/knex-seeder.svg)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/2rhop/knex-seeder.svg)
-![Dependencies](https://david-dm.org/2rhop/knex-seeder.svg?branch=master)
 [![GitHub (pre-)release](https://img.shields.io/github/release/2rhop/knex-seeder/all.svg)](https://github.com/2rhop/knex-seeder/releases)
-![Github Pre-Releases](https://img.shields.io/github/downloads-pre/2rhop/knex-seeder/v0.1-beta.1/total.svg)
 ====
 
-## <img align="center" alt="knex-seeder Logo" src="assets/logo.png" height=150 title="knex-seeder"/>
+## <img align="center" alt="knex-seeder Logo" src="https://raw.githubusercontent.com/2rhop/knex-seeder/master/assets/logo.png" height=150 title="knex-seeder"/>
 
 ### [Knex](http://knexjs.org) tool for seeding massive amount of fake data into a database.
 
@@ -39,15 +36,11 @@ git clone https://github.com/2rhop/knex-seeder.git ks
 cd ks
 npm install
 ```
-### <marquee behavior="alternate" scrolldelay="40" truespeed hspace="25%">
- For production _`(not available right now)`_</marquee>
-
-<div style="display:none">
+### For production
 
 ```bash
 npm install knex-seeder --save
 ```
-</div>
 
 ## Configuration
 
