@@ -1,0 +1,7 @@
+*
+!api/*
+!index.js
+!package.json
+!README.MD
+!LICENSE
+!CHANGELOG.md

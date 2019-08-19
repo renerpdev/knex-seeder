@@ -1,9 +1,9 @@
-v0.1-beta.2 / 2019-08-19
+v0.1.0-0 / 2019-08-19
 ==================
 
 * Adding few changes to integreate it with NPM plattform
 
-v0.1-beta.1 / 2018-07-12
+2018-07-12
 ==================
 
-* Initial release
+* Initial pre-release on github
