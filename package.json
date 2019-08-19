@@ -1,6 +1,6 @@
 {
   "name": "knex-seeder",
-  "version": "0.1.0-0",
+  "version": "0.1.0",
   "description": "Knex tool for seeding massive amount of fake data into a database",
   "main": "index.js",
   "scripts": {
