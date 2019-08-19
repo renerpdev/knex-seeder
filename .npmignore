@@ -1,7 +1,7 @@
-*
-!api/*
-!index.js
-!package.json
-!README.MD
-!LICENSE
-!CHANGELOG.md
+spec/
+assets/
+examples/
+node_modules/
+.travis.yml
+knexfile.js
+package-lock.json
